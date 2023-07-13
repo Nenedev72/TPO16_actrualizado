@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="public/img/favicon.ico"/>
+    <link rel="stylesheet" href="./public/css/normalize.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <title>.16 - Web Design</title>
+    <style>
+      footer a:link, footer a:visited, footer a:hover, footer a:active {
+         color: white;
+         text-decoration: none;
+       }
+       </style>
+  </head>
+  <body>
+    <header class="bg-header">
+      <div class="container">
+        <nav class="nav">
+          <div class="nav-header">
+            <a href="#"><img src="./public/img/logo.png" alt="Logo">
+            </a>
+          </div>
+          <div id="btnMenu" class="nav-button">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div id="mnuNav" class="nav-bar">
+            <ul class="nav-list">
+              <li class="list-item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="list-item">
+                <a href="#">Sobre nosotros</a>
+              </li>
+              <li class="list-item dropdown">
+                <a id="btnServicios" class="flex-spacebetween">Servicios <span><i id="iUpDown" class="fa-solid fa-angles-down"></i></span></a>
+                <ul id="subMenu" class="dropdown-menu">
+                  <li class="dropdown-item">
+                    <a href="serv_web.html">Servicios Web</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="#">Marketing Digital</a>
+                  </li>
+                  <li class="dropdown-item">
+                    <a href="web_hosting.html">Web Hosting</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="list-item">
+                <a href="clientes.html">Clientes</a>
+              </li>
+              <li class="list-item">
+                <a href="">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="main" style="
+            background-image: url(public/img/back_MD.jpg);
+            display:flex;flex-direction: row;
+            align-items: center;justify-content: flex-end;">
+            <div  style="
+            background: rgba(0,0,0,0.5);
+            border-radius: 30px;
+            color: white;
+            margin-right:100px;
+            padding-top: 50px;
+            padding-bottom: 50px;">
+              <h3 style="text-align:right;
+              margin-right: 50px;
+              ">Marketing...</h3>
+              <h2 style="text-align:right;
+              margin-left: 50px;
+              margin-right: 50px;">Su empresa en redes sociales y AdWords</h2>
+            </div>
+      </section>
+
+
+      <section >
+        <h1 style="text-align: center;">MARKETING DIGITAL</h1>
+        <div style="display:flex; flex-direction: row;
+                    background-image: url(public/img/MD_desenfocado.jpg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 300px;">
+        <div style="width:50%;height:450px;
+        display:flex;flex-direction:column; justify-content:center;align-items: center;">
+            <div style="border-radius: 30px;width:450px;
+            padding:30px;
+            background: rgb(204,204,204);
+            background: linear-gradient(0deg,    rgba(204,204,204,1) 0%,
+                                                 rgba(255,255,255,1) 100%);
+            box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);">
+                <h1 style="">Herramientas para crecer en Facturación y Ventas</h1>
+                <p style="font-size: larger;">
+                  Luego de 21 años de experiencia ayudando a crecer a Pymes y Emprendimientos en Internet, fuimos conformando material con guías "paso por paso" para las plataformas y herramientas existentes más significativas.</p>
+            </div>
+        </div>
+        <div style="width:50%;height:450px;
+        display:flex;flex-direction:column; justify-content:center;align-items: center;">
+            <div style="border-radius: 30px;width:450px;
+            padding:30px;
+            background: rgb(204,204,204);
+            background: linear-gradient(0deg,    rgba(204,204,204,1) 0%,
+                                                 rgba(255,255,255,1) 100%);
+            box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.75);">
+                <h1 style="">Google Ads: Asistencia, Configuración</h1>
+                <p style="font-size: larger;">
+                  Al mismo tiempo en que Google Ads se ha popularizado en los últimos años como la principal plataforma de anuncios, a la vez se ha tornado más complejo al momento de configurar las campañas de posicionamiento.</p>
+            </div>
+        </div>
+        </div>
+      </section>      
+ 
+    </main>
+    <footer style="width:100%;height:250px;background-color:gray;margin-top:60px">
+      <div style="display:flex;flex-direction: row;color:white;justify-content: space-evenly;">
+        <div style="display:flex;align-items: center;"><img style="width:150px;" src="public/img/logo_w.png"></div>
+        <div style="margin-top:20px;margin-left:40px;padding-left:20px;">
+          <h3>Nuestros Servicios</h3>
+          <ul>
+            <li><a href="serv_web.html">Servicios Web</a></li>
+            <li><a href="marc_digital.html">Marketing Digital</a></li>
+            <li><a href="web_hosting.html">Web Hosting</a></li>
+        </ul>
+        </div>
+        <div style="margin-top:20px;margin-left:40px;padding-left:20px">
+          <h3>Informacion de Contacto</h3>
+          <p>Tel: 0800-555-1234</p>
+          <p>Cel: 11 1234-5678</p>
+          <p>WApp: 11 6321-9876</p>
+          <P>Email: desarrollo@G16.com.ar</P>
+          <p>Direccion: Lavalle 1234-CABA-CP(AB123G)</p>
+        </div>
+        <div style="margin-left:40px;display:flex;align-items: center;">
+          <i class="fa fa-instagram fa-2x"  aria-hidden="true"></i>
+          <i class="fa fa-facebook-square fa-2x" style="margin-left:30px;" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square fa-2x" style="margin-left:30px;" aria-hidden="true"></i>
+        </div>
+
+      </div>
+      <div>
+        <p style="text-align:right;margin-right:100px">Derechos reservados</p>
+        </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/2dbbc371d1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./public/js/app.js"></script>
+  </body>
+</html>

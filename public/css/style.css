@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,700;1,100;1,300&display=swap');
+
+:root {
+    --font-primary: 'Roboto', sans-serif;
+
+    --color-black: #000;
+    --color-white: #fff;
+
+    --color-gray-950: #030712;
+    --color-ligth-blue-150: #2daae1;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+.title {
+    text-align: center;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+}
+
+.section-content {
+    padding: 2rem 0;
+}
+
+.box-content {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.box-content .box-img {
+    width: 50%;
+}
+
+.box-content .box-info {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2rem;
+}
+
+.box-content .box-info p{
+    text-align: justify;
+}
+
+.box-img-1,
+.box-img-2,
+.box-img-3 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    width: 50%;
+    height: 25rem;
+}
+
+.box-img-1{
+    background-image: url(../img/Desarrollo-Web.jpg);
+}
+
+.box-img-2 {
+    background-image: url(../img/Marketing-Digital.jpg);
+}
+
+.box-img-3 {
+    background-image: url(../img/Hosting.jpg);
+}
+
+.bg-header {
+    background-color: var(--color-gray-950);
+}
+
+.nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 7rem;
+}
+
+.nav-header {
+    height: 100%;
+}
+
+.nav-header a {
+    display: block;
+    height: 100%;
+}
+
+.nav-header a img {
+    height: 7rem;
+}
+
+.nav-button i {
+    color: var(--color-white);
+    font-size: 2.5rem;
+    border: 2px solid white;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+
+.nav-button i:hover {
+    background-color: var(--color-ligth-blue-150);
+}
+
+.nav-bar {
+    list-style: none;
+    width: 100%;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    position: absolute;
+    border: 2px solid var(--color-black);
+    background-color: var(--color-gray-950);
+    top: 8rem;
+    color: var(--color-white);
+    transform: scaleY(0);
+    transform-origin: top;
+    z-index: 100;
+    transition: all .5s;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1280px) {
+    .nav-bar {
+        background: transparent;
+        position: relative;
+        top: 0;
+        flex-direction: row;
+        transform: scaleX(1);
+        height: 100%;
+        justify-content: end;
+        padding: 0;
+        align-items: center;
+    }
+
+    .nav-button {
+        display: none;
+    }
+
+}
+
+.nav-bar ul {
+    list-style: none;
+}
+
+.collapse {
+    transform: scaleY(1);
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown {
+    height: auto;
+
+}
+
+.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3rem;
+    overflow: hidden;
+    height: 0;
+    transition: height .5s linear;
+}
+
+.collapse-submenu {
+    height: 10rem;
+}
+
+.flex-spacebetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-item a {
+    text-decoration: none;
+    height: 100%;
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 1280px) {
+    .nav-list {
+        flex-direction: row;
+    }
+
+    .dropdown i {
+        display: none;
+    }
+}
+
+.list-item {
+    padding: .2rem 1rem;
+    position: relative;
+    border-bottom: 1px solid #616161
+}
+
+.list-item>a {
+    color: var(--color-white);
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+
+
+@media screen and (min-width: 1280px) {
+    .dropdown-menu {
+        height: auto;
+        display: flex;
+        overflow: visible;
+        background-color: var(--color-white);
+        left: -1rem;
+        position: absolute;
+        flex-direction: column;
+        top: 5rem;
+        padding: 2rem 0;
+        width: 20rem;
+        box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+        z-index: 1000;
+        visibility: hidden;
+        opacity: 1;
+        transition: all 300ms ease;
+    }
+
+    .list-item {
+        border-bottom: 0px;
+    }
+
+    .list-item>a {
+        text-decoration: none;
+        background: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% .3rem;
+        transition: all 0.5s;
+        padding-bottom: 1rem;
+
+    }
+
+    .list-item>a:hover {
+        background-size: 100% .3rem;
+    }
+
+    .dropdown-item a {
+        text-decoration: none;
+        height: 100%;
+        display: block;
+        padding: 0 1rem;
+        color: var(--color-gray-950);
+        font-weight: 300;
+    }
+
+    .dropdown-item a:hover {
+        background-color: var(--color-ligth-blue-150);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        visibility: visible;
+        opacity: 1;
+        top: 5rem;
+    }
+
+    .dropdown-menu::before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-left: 1.2rem solid transparent;
+        border-right: 1.2rem solid transparent;
+        border-bottom: 1.2rem solid var(--color-white);
+        position: absolute;
+        top: -12px;
+        left: 2rem;
+    }
+}
+
+.main {
+    /*height: calc(100vh - 7rem);*/
+    height: 600px;
+    width: 100%;
+    background-image: url(../img/back_header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    /*animation-name: bg-image;
+    animation-duration: 30s; 
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-content {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    color: white;
+    margin-right: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.main-content h2,
+h3 {
+    text-align: right;
+    margin-right: 50px;
+}
+
+.main-content h2 {
+    margin-left: 50px;
+}
+
+@keyframes bg-image {
+    0% {
+        background-position: left
+    }
+
+    100% {
+        background-position: right;
+    }
+}
